@@ -12,7 +12,7 @@ header {
 }
 
 main {
-  background-image: url("img/bodybackground.png");
+  background-image: url("img/bodybackground.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -21,9 +21,9 @@ main {
 }
 
 .headline{
-  text-align: center;
-  margin: ;
-  text
+  text-align: left;
+  position: absolute;
+  top: 150px;
 }
 
 
@@ -60,9 +60,6 @@ main {
   padding-left: 10px;
 }
 
- a:active{
-  background-color: rgb(175, 171, 163);
-}
 
 .navbar {
   margin-right: 30px;
@@ -73,6 +70,9 @@ main {
   transition: 0.2s ease-in-out;
 }
 
+.active{
+  background-color: rgb(175, 171, 163);
+}
 .products-section {
   /* background-color: #dfe6e9; */
   padding: 3.1em;
@@ -83,7 +83,7 @@ main {
   background-color: white;
   border-radius: 10px;
   padding: 1em;
-  box-shadow: 0px 10px 5px #b2bec3;
+  box-shadow: 0px 10px 5px #888a78;
   text-align: center;
   font-family: helvetica;
 }
@@ -115,8 +115,9 @@ main {
   position: relative;
 }
 .buy-button:hover {
-  box-shadow: 0px 10px 5px #d8dee0;
-  color: yellow;
+  box-shadow: inset 300px 0 0 0 #d8dee0;
+  color: rgb(0, 0, 0);
+  transition: 0.5s ease-in-out;
 }
 
 .product-container {
@@ -126,7 +127,7 @@ main {
   justify-content: center;
 }
 
-li a {
+li a{
   display: block;
   padding: 8px;
   text-decoration: none;
